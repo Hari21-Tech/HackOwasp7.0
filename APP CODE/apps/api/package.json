@@ -1,0 +1,28 @@
+{
+  "name": "@hackmol/api",
+  "version": "0.0.1",
+  "private": true,
+  "nx": {
+    "targets": {
+      "serve": {
+        "executor": "@nx/js:node",
+        "defaultConfiguration": "development",
+        "dependsOn": [
+          "build"
+        ],
+        "options": {
+          "buildTarget": "@hackmol/api:build",
+          "runBuildTargetDependencies": false
+        },
+        "configurations": {
+          "development": {
+            "buildTarget": "@hackmol/api:build:development"
+          },
+          "production": {
+            "buildTarget": "@hackmol/api:build:production"
+          }
+        }
+      }
+    }
+  }
+}
