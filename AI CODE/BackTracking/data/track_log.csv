@@ -1,0 +1,12 @@
+timestamp,camera,event_type,details
+20-04-2025 00:01:23.116263,1,person_detected,Person_001
+20-04-2025 00:01:27.506956,1,person_detected,Person_002
+20-04-2025 00:01:27.506956,1,objects_with_person,Person_002: cup
+20-04-2025 00:01:28.393910,1,objects_with_person,Person_002: bottle
+20-04-2025 00:01:28.393910,1,objects_removed,Person_002: cup
+20-04-2025 00:01:33.098206,1,person_left,Person_002
+20-04-2025 00:01:33.099160,1,objects_removed,None: bottle
+20-04-2025 00:01:35.627046,0,objects_abandoned,bottle
+20-04-2025 00:01:36.520021,0,objects_abandoned,skateboard
+20-04-2025 00:01:36.984457,0,abandoned_objects_picked,skateboard
+20-04-2025 00:01:43.987621,1,person_detected,Person_002
