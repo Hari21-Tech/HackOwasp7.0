@@ -20,7 +20,7 @@
       "executor": "nx:run-commands",
       "options": {
         "commands": [
-          "nx run @hackmol/frontend:dev",
+          "nx run @hackowasp/frontend:dev",
           "nx run tauri:serve"
         ],
         "parallel": true

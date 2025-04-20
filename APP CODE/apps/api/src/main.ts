@@ -6,7 +6,7 @@ import http from 'http';
 import fetch from 'node-fetch';
 
 import { setupSocketEvents, setUpLiveUpdates } from './events';
-import database, { ensureTables } from '@hackmol/database';
+import database, { ensureTables } from '@hackowasp/database';
 
 ensureTables();
 

@@ -1,5 +1,5 @@
 {
-  "name": "@hackmol/api",
+  "name": "@hackowasp/api",
   "version": "0.0.1",
   "private": true,
   "nx": {
@@ -11,15 +11,15 @@
           "build"
         ],
         "options": {
-          "buildTarget": "@hackmol/api:build",
+          "buildTarget": "@hackowasp/api:build",
           "runBuildTargetDependencies": false
         },
         "configurations": {
           "development": {
-            "buildTarget": "@hackmol/api:build:development"
+            "buildTarget": "@hackowasp/api:build:development"
           },
           "production": {
-            "buildTarget": "@hackmol/api:build:production"
+            "buildTarget": "@hackowasp/api:build:production"
           }
         }
       }
