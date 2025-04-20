@@ -82,6 +82,22 @@ frontend_io.on('connection', (socket) => {
       return socket.emit('get_all_parking_result', data);
     })
 });
+admin_io.on('connection', (socket) => {
+  socket.on('get_parking', async (parking_id) => {
+    const data = await database.parking_spot.getParkingSpots(parking_id);
+    if (!data.success) {
+      return;
+    }
+    return socket.emit('get_parking_result', data);
+  });
+  socket.on('get_parking_spots', async (parking_id) => {
+    const data = await database.parking_spot.getParkingSpots(parking_id);
+    if (!data.success) {
+      return;
+    }
+    return socket.emit('get_parking_spots_result', data);
+  });
+});
 
 frontend_receiver_server.listen(process.env.CLIENT_WS_PORT, () => {
   console.log(
