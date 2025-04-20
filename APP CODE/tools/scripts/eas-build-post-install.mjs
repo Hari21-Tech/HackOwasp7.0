@@ -1,10 +1,3 @@
-/**
- * This script is used to patch the '@nx/expo' package to work with EAS Build.
- * It is run as a eas-build-post-install script in the 'package.json' of expo app.
- * It is executed as 'node tools/scripts/eas-build-post-install.mjs <workspace root> <project root>'
- * It will create a symlink from the project's node_modules to the workspace's node_modules.
- */
-
 import { symlink, existsSync } from 'fs';
 import { join } from 'path';
 

@@ -98,7 +98,10 @@ async function ensureTable(table_name: TableName, data: string[]) {
     try {
       await fakeInserter[table_name]();
     } catch {
-      // fuck it
+      // we can ignore errors here
+      // because we are just trying to insert fake data
+      // and it may fail if the data is not valid
+      // or if the table is not created yet
     }
   }
   console.log(`"${table_name}" created`);
